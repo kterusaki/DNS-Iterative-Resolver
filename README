@@ -1,0 +1,9 @@
+DNS Iterative Resolver
+This program maps host names to IP addresses. It queries a server for a host name to IP address
+mappings (Type A) unless given the -m flag, in which it queries for mail exchanges (Type MX).
+It prints out the intermediate steps as it traverses the DNS hierarchy. If asked to resolve an
+invalid name it prints an error. If the program encounters Type CNAME, then it prints out CNAME 
+and exits.
+
+Inputs: 1) hostname 
+        2) root-servers.txt
